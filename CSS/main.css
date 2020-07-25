@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 :root {
-  --bg-color: rgb(255, 255, 255);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #dfe0e2;
+  --tertiary-color: #f1f3fe;
   --text-color: #4d515c;
-  --border-color: #dfe0e2;
-  --span-color: #12ae4a;
-  --bg-grid: #f1f3fe;
+  --title-color: #12ae4a;
 }
 
 * {
@@ -18,17 +18,14 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   color: var(--text-color);
-  font-size: 22px;
 }
 
-/* Span Cryptocurrencies */
-
-.crypto {
-  font-weight: 700;
-  color: var(--span-color);
+#title a {
+  font-size: 1.625rem;
+  color: var(--title-color);
 }
 
 a {
@@ -37,54 +34,28 @@ a {
 
 /* Header */
 #container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  min-height: 6.25rem;
+  grid-auto-flow: column;
+  gap: 0.625rem;
   align-items: center;
-  margin: 30px 25px;
+  justify-items: center;
 }
 
-/* Nav Ul */
-.nav-ul {
-  display: flex;
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.625rem;
 }
 
-.nav-ul a {
-  padding: 0 15px;
-}
-
-.nav-ul a:hover {
-  font-weight: 700;
-}
-
-/* Search bar */
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search input {
-  background-color: transparent;
-  border: 2px solid var(--border-color);
-  border-radius: 15px;
-  padding: 0 10px;
-  height: 30px;
-  color: var(--text-color);
-  font-size: 15px;
-  outline: none;
-}
-
-/* Main */
+/* Main Container */
 #main-container {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: 310px;
-  margin: 6rem 25px;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 3fr);
+  gap: 0.625rem;
 }
 
 .item {
-  background-color: var(--bg-grid);
+  background-color: var(--tertiary-color);
 }
-
-/* Item 1 */
