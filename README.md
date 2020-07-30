@@ -1,2 +1,2 @@
-# CryptocurrenciesToday
-Um site que mostra em tempo real o valor das criptomoedas. 
+# Not ready yet 
+not ready yet
