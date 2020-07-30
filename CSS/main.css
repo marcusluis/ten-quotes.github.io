@@ -30,6 +30,7 @@ body {
 
 a {
   color: var(--text-color);
+  cursor: pointer;
 }
 
 /* Header */
@@ -52,10 +53,14 @@ a {
 #main-container {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
-  grid-template-rows: repeat(3, 3fr);
-  gap: 0.625rem;
+  grid-template-rows: repeat(2, 3fr);
+  gap: 1.25rem;
+  margin: 7.5rem 2rem;
 }
 
-.item {
+#main-container .item {
   background-color: var(--tertiary-color);
+  padding: 3.75rem 0;
+  box-shadow: 3px 7px var(--secondary-color);
+  border-radius: 15px;
 }
