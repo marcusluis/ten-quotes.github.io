@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: rgb(255, 255, 255);
-  --secondary-color: #dfe0e2;
-  --tertiary-color: #f1f3fe;
+  --tertiary-color: #dfe0e2;
+  --secondary-color: #f1f3fe;
   --text-color: #4d515c;
   --title-color: #12ae4a;
 }
@@ -21,6 +21,7 @@ body {
   background-color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 #title a {
@@ -51,16 +52,28 @@ a {
 
 /* Main Container */
 #main-container {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-template-rows: repeat(2, 3fr);
-  gap: 1.25rem;
-  margin: 7.5rem 2rem;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-#main-container .item {
-  background-color: var(--tertiary-color);
-  padding: 3.75rem 0;
-  box-shadow: 3px 7px var(--secondary-color);
+#main-container .inner-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 98px;
+  padding: 26px 0;
   border-radius: 15px;
+  background-color: var(--secondary-color);
+}
+
+#main-container .inner-container .item {
+  width: 80%;
+  margin: 28px auto;
+  padding: 26px 0;
+  border-radius: 12px;
+  background-color: var(--tertiary-color);
+}
+
+#main-container .inner-container .item p {
+  text-align: center;
 }

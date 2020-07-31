@@ -10,6 +10,10 @@
     margin-top: 2.5rem;
   }
 
+  #title a {
+    font-size: 18px;
+  }
+
   .links {
     margin-top: 1rem;
   }
