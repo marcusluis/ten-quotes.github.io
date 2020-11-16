@@ -1,2 +1,2 @@
 # ten-quotes
-Website with 10 quotes.
+A Website with 10 quotes.
