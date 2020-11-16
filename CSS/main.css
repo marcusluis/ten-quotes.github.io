@@ -113,6 +113,7 @@ a {
 }
 
 .main-container .quote-container .author {
+  color: var(--color-three);
   font-size: 14px;
   font-style: italic;
   margin-bottom: 12px;
@@ -189,7 +190,7 @@ footer {
 }
 
 .contact-container img {
-  margin-top: 48px;
+  margin-top: 98px;
   height: 276px;
   width: 388px;
 }
@@ -213,6 +214,10 @@ footer {
     height: 74px;
     width: 110px;
   }
+}
+
+.contact-container aside h1 {
+  margin-bottom: 38px;
 }
 
 @media (max-width: 769px) {
