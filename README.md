@@ -1,2 +1,2 @@
-# In construction
-Website with quotes.
+# ten-quotes
+Website with 10 quotes.
